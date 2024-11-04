@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background-color: #0e0e0e;
+}
+
+.color {
+  color: #f4bf8a;
+}
+
+.border-gradient {
+  border: 2px solid;
+  border-image: linear-gradient(to bottom left, #fdbb74a4, #fed7aa43) 1;
+}
+
+.bg-gradient {
+  background-image: linear-gradient(to top, #131313 70%, transparent);
+}
+
+@layer base {
+  * {
+    @apply box-border list-none p-0 m-0 scroll-smooth;
+  }
+
+  body {
+    @apply text-white;
+  }
+}
+
+@layer components {
+  .max-container {
+    @apply max-w-7xl mx-auto my-0;
+  }
+
+  .btn-animation {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0 hover:after:h-full focus-visible:after:h-full transition-all after:duration-300 after:-z-[1];
+  }
+
+  .img-food,
+  .info-food,
+  .info-opt {
+    @apply duration-300;
+  }
+
+  .food:hover .img-food {
+    @apply scale-105 opacity-70;
+  }
+
+  .food:hover .info-opt {
+    @apply bg-neutral-950/80;
+  }
+
+  .food:hover .info-food {
+    @apply lg:-translate-y-full bg-gradient;
+  }
+
+  .btn-food {
+    @apply duration-300 z-20 translate-y-full hidden;
+  }
+
+  .food:hover .btn-food {
+    @apply lg:-translate-y-5 sm:flex;
+  }
+}
+
+@layer utilities {
+  .padding-x {
+    @apply px-4 md:px-5 lg:px-6;
+  }
+
+  .padding-y {
+    @apply py-[4.5rem] lg:py-[6.25rem];
+  }
+
+  .border-under {
+    @apply relative before:left-0 before:right-0 before:-bottom-0 before:absolute before:bg-primary before:h-[2px] before:scale-x-100 before:animate-underline;
+  }
+
+  .img-gradient-left {
+    mask-image: linear-gradient(to left, black 80%, transparent);
+  }
+
+  .img-gradient-bottom {
+    mask-image: linear-gradient(to bottom, black 50%, transparent);
+  }
+
+  .img-gradient-top {
+    mask-image: linear-gradient(to top, black 80%, transparent);
+  }
+
+  .appear-l-item::after {
+    @apply absolute top-0 left-0 w-full h-full bg-background animate-appear-transform content-[''];
+  }
+
+  .appear-r-item::after {
+    @apply absolute top-0 right-0 w-full h-full bg-background animate-appear-transform content-[''];
+  }
+}
+
+.btn-food {
+  transition-behavior: allow-discrete;
+}
+
+.food:hover .btn-food {
+  @starting-style {
+    transform: translate(-50%, 100%);
+    left: 50%;
+  }
+}
+
+.message {
+  transition-duration: 0.2s;
+  transition-behavior: allow-discrete;
+  transform: translate(-50%, calc(-100% - 0.5rem));
+  opacity: 1;
+
+  @starting-style {
+    transform: translate(-50%, 0);
+    left: 50%;
+    opacity: 0;
+  }
+}
+
+.cart {
+  transition-duration: 0.5s;
+  transition-behavior: allow-discrete;
+}
+
+.open-cart {
+  display: block;
+  transform: translateX(0);
+
+  @starting-style {
+    transform: translateX(100%);
+  }
+}
+
+.hide-cart {
+  display: none;
+  transform: translateX(100%);
+}
+
+.hide-backdrop {
+  display: none;
+  opacity: 0;
+}
+
+.open-backdrop {
+  display: block;
+  opacity: 1;
+
+  @starting-style {
+    opacity: 0;
+  }
+}
+
+.filter-list {
+  transition-behavior: allow-discrete;
+}
+
+.filter > .filter-list {
+  display: none;
+  opacity: 0;
+}
+
+.filter:focus-within > .filter-list,
+.filter:hover > .filter-list {
+  display: block;
+  opacity: 1;
+
+  @starting-style {
+    opacity: 0;
+  }
+}
+
+.filter:focus-within > button {
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+  background-color: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f4bf8a;
+  border-radius: 3rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #eda467;
+}
