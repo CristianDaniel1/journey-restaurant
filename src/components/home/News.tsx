@@ -64,7 +64,9 @@ export const News = () => {
         </div>
         <div
           className={`text-primary relative shadow aspect-[4/5] ${
-            isVisible ? 'appear-l-item' : ''
+            isVisible
+              ? 'appear-l-item'
+              : 'after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-background'
           }`}
           ref={elementImg}
         >
