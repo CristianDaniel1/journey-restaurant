@@ -21,8 +21,6 @@ export const News = () => {
     return () => observer.unobserve(element);
   }, []);
 
-  console.log('NEW', isVisible);
-
   return (
     <section className="padding-y max-container" id="novidades">
       <p className="uppercase text-center text-sm tracking-wider text-primary font-semibold pb-14">
@@ -57,7 +55,7 @@ export const News = () => {
             </div>
           </div>
           <LinkTo
-            to="/cadastro"
+            to="/login"
             bgColor
             className="block max-w-sm mx-auto md:mx-0"
           >
