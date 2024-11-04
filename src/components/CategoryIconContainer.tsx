@@ -14,7 +14,7 @@ export const CategoryIconContainer = ({ category }: IconContainerProps) => {
   if (category === 'drink') categ = 'Bebidas';
 
   return (
-    <div className="text-primary hidden sm:flex pb-12 gap-8 items-center">
+    <div className="text-primary flex pb-12 gap-8 items-center">
       <IconContainer className="translate-x-2">
         {category === 'dish' && <FoodIcon />}
         {category === 'drink' && <DrinkIcon />}
