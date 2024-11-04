@@ -32,7 +32,7 @@ export const MenuDetails = () => {
             />
           </div>
           <div className="padding-x md:pl-0 md:pr-12 lg:pr-20 py-6 md:py-8 lg:py-14">
-            <CategoryIconContainer category={category} />
+            <CategoryIconContainer category={category} invisible />
             <div className="flex justify-between items-center pb-8 gap-4 flex-wrap">
               <h2 className="text-2xl xl:text-4xl font-merry">{name}</h2>
               <div className="text-primary-light font-medium text-2xl xl:text-4xl">
