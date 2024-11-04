@@ -15,7 +15,7 @@ export const Login = () => {
         />
       </div>
       <div className="max-container padding-x flex items-center pt-10 lg:pt-20">
-        <form className=" px-8 md:px-14 py-16 bg-background md:w-[40rem] mx-auto rounded-md animate-[slide-up_0.3s_ease-in-out_backwards]">
+        <form className=" px-8 md:px-14 py-16 bg-background md:w-[40rem] mx-auto rounded-md animate-[slide-up_0.5s_ease-in-out_backwards]">
           <p className="uppercase text-sm tracking-wider text-primary font-semibold pb-6 text-center">
             login
           </p>
