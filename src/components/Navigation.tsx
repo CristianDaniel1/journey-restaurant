@@ -63,19 +63,6 @@ export const Navigation = ({
         </li>
         <li>
           <NavLink
-            to="/reservas"
-            onClick={handleCloseBar}
-            className={({ isActive }) =>
-              `hover:text-primary py-[0.63rem] duration-200 inline-block ${
-                isActive ? 'text-primary border-under' : 'hover:border-under'
-              }`
-            }
-          >
-            Reservas
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
             to="/login"
             onClick={handleCloseBar}
             className={({ isActive }) =>
