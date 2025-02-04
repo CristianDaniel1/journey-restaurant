@@ -16,8 +16,8 @@ export const Button = ({
     <button
       className={`px-10 text-center border-2 py-4 ${
         bgColor
-          ? 'bg-primary border-transparent text-neutral-950 after:bg-neutral-900 focus-visible:text-primary hover:text-primary'
-          : 'text-primary border-primary after:bg-primary hover:text-neutral-900 focus-visible:text-neutral-900'
+          ? 'bg-primary border-transparent text-neutral-950 after:bg-background focus-visible:text-primary hover:text-primary'
+          : 'text-primary border-primary after:bg-primary hover:text-background focus-visible:text-background'
       } uppercase font-bold tracking-wider text-sm btn-animation z-[1] ${className}`}
       {...props}
     >

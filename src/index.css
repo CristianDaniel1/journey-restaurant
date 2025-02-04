@@ -5,11 +5,11 @@
 @tailwind utilities;
 
 html {
-  background-color: #0e0e0e;
+  background-color: #080808;
 }
 
 .color {
-  color: #f4bf8a;
+  color: #ffb56a;
 }
 
 .border-gradient {
@@ -187,10 +187,10 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #f4bf8a;
+  background-color: #ffb56a;
   border-radius: 3rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #eda467;
+  background-color: #ffa237;
 }

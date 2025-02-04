@@ -10,7 +10,7 @@ export const ContactItem = ({
   extraText,
 }: ContactItemProps) => {
   return (
-    <li className="p-4 bg-neutral-900">
+    <li className="p-4 bg-background">
       <p className="uppercase text-sm tracking-wider font-semibold pb-4">
         {title}
       </p>

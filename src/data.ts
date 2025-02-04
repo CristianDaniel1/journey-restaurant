@@ -266,7 +266,6 @@ export const menuDishes: CompleteMenu[] = [
     image: strawberryJuice,
     category: 'drink',
   },
-
   {
     id: 'limonada',
     name: 'Limonada',

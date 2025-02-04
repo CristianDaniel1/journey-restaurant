@@ -5,7 +5,7 @@ import { LinkTo } from '../components/ui/LinkTo';
 export const Menu = () => {
   return (
     <section className="relative padding-y overflow-hidden min-h-screen max-container sm:padding-x">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 place-items-center gap-8 lg:gap-20 bg-neutral-900 shadow-md rounded-xl overflow-hidden mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 place-items-center gap-8 lg:gap-20 bg-background shadow-md rounded-xl overflow-hidden mt-10">
         <div className="text-center md:text-left order-2 md:order-first px-6 pb-10 md:pl-6 md:pr-0 md:py-6 lg:col-span-2 animate-slide-right">
           <p className="uppercase text-sm tracking-wider text-primary font-semibold">
             Popular

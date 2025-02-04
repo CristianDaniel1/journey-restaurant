@@ -14,7 +14,7 @@ export const PreviewMenuItem = ({
   description,
 }: MenuItemProps) => {
   return (
-    <li className="bg-neutral-900 shadow rounded-lg overflow-clip food hover:bg-background duration-200">
+    <li className="bg-background shadow rounded-lg overflow-clip food hover:bg-background/50 duration-200">
       <Link to={`cardapio/${id}`} className="grid grid-cols-1 sm:grid-cols-5 ">
         <div className="col-span-2 h-full overflow-clip">
           <img

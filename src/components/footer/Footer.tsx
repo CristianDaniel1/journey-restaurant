@@ -29,7 +29,7 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="text-center bg-neutral-900 pt-14 pb-14 text-neutral-300">
+      <p className="text-center bg-background pt-14 pb-14 text-neutral-300 px-3">
         &copy; 2024 Journey. Desenvolvido por{' '}
         <span className="text-primary">Cristian Daniel</span>
       </p>

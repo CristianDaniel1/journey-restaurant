@@ -23,8 +23,8 @@ export const MenuDetails = () => {
   return (
     <>
       <section className="padding-y max-container sm:padding-x">
-        <article className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-20 bg-neutral-900 rounded-xl overflow-hidden">
-          <div className="w-full h-full aspect-square relative animate-[opacity_0.5s_ease-in-out_backwards] bg-background">
+        <article className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-20 bg-background rounded-xl overflow-hidden">
+          <div className="w-full h-full aspect-square relative animate-[opacity_0.5s_ease-in-out_backwards] bg-background-secondary">
             <img
               src={image}
               alt={alt}
@@ -54,7 +54,7 @@ export const MenuDetails = () => {
           </div>
         </article>
       </section>
-      <section className="bg-neutral-950">
+      <section className="bg-background/50">
         <div className="max-container padding-x padding-y ">
           <h2 className="text-3xl leading-tight xl:text-5xl font-merry text-center pb-20 font-light">
             Veja mais opções

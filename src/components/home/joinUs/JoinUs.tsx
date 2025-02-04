@@ -32,7 +32,7 @@ export const JoinUs = () => {
         >
           Cadastre-se
         </Link>
-        <div className="relative mx-auto max-w-xl md:max-w-3xl bg-[#101010] py-20 px-10 mt-20 mb-8">
+        <div className="relative mx-auto max-w-xl md:max-w-3xl bg-background-secondary py-20 px-10 mt-20 mb-8">
           <div
             className="absolute left-1/2 -translate-x-1/2 top-0 -translate-y-1/2 text-primary flex justify-center gap-10 py-6"
             aria-hidden="true"

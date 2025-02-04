@@ -13,7 +13,7 @@ export const Header = () => {
   }
 
   return (
-    <header className="overflow-x-clip fixed w-full z-50 uppercase text-sm bg-background shadow-lg animate-slide-down">
+    <header className="overflow-x-clip fixed w-full z-50 uppercase text-sm bg-background shadow-md shadow-background-secondary animate-slide-down">
       <div className="flex justify-between gap-4 relative font-semibold tracking-wide items-center h-[65px] lg:h-24 mx-auto my-0 px-4 md:px-5 lg:px-10">
         <Link
           to="/"

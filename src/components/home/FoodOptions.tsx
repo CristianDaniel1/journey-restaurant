@@ -2,7 +2,7 @@ import { Options } from '../Options.tsx';
 
 export const FoodOptions = () => {
   return (
-    <section className="bg-background" id="categorias">
+    <section className="bg-background/70" id="categorias">
       <div className="max-container padding-x padding-y flex flex-col items-center">
         <p className="uppercase text-sm tracking-wider text-primary font-semibold pb-6">
           Variedade de opções

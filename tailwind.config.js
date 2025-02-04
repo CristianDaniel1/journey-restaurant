@@ -1,14 +1,13 @@
-import { transform } from 'typescript';
-
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
-        primary: '#f4bf8a',
+        primary: '#ffb56a',
         'primary-light': '#fed7aa',
-        background: '#131313',
+        background: '#111111',
+        'background-secondary': '#080808',
       },
       fontFamily: {
         merry: ['Merriweather', 'serif'],
